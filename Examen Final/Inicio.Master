@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Inicio.master.cs" Inherits="Examen_Final.Inicio" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>VETERINARIA HUELLITA</title>
+     <link href="css/Inicio.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div class="header">
+                <a href="#default" class="logo">VETERINARIA HUELLITA</a>
+                <div class="header-right">
+                    <a class="active" href="Principal.aspx">Inicio</a>
+                    <a class="active" href="Usuarios.aspx">Reportes de usuarios</a>
+                    <a class="active" href="Mascotas.aspx">Reportes de mascotas</a>
+                    <a class="active" href="Citas.aspx">Reporte de citas</a>
+                    <a href="#about">Salir</a>
+
+                </div>
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
